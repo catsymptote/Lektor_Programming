@@ -18,11 +18,13 @@ def f(x):
 f(2)
 """
 
+import numpy as np
+
 def f(x):
-    return x**3
+    return np.sin(x)
 
-lst = [2]
+lst = [1.07]
 
-for i in range(4):
-    lst.append(f(lst[len(lst) -1]))
+for i in range(100):
+    lst.append(f(lst[len(lst) -1] +i))
 print(lst)
