@@ -26,7 +26,7 @@ def P_vect(u):
         v[i] = P(u[i])
     return v
 
-u = [0, 1, 2, 3, 4]
+u = np.linspace(-10, 10, 101)
 y_values = P_vect(u)
 x_values = np.linspace(0, len(y_values) -1, len(y_values))
 
