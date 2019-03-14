@@ -6,9 +6,10 @@ Created on Wed Jan 30 17:25:56 2019
 """
 
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Input matrix and vector
-A = [[1, 2], [3, 4]]
+A = [[1, 0.5], [1, 0.5]]
 u = [5, 6]
 
 # Hard coded dot product (and transpose) function for (2x2) x (2x1) = (2x1).
@@ -19,6 +20,7 @@ def dot_product(A, u):
     v[1] = A[1][0] * u[0] + A[1][1] * u[1]
     
     return v
+ 
 
 # Call dot_product and print out result.
 point = dot_product(A, u)
