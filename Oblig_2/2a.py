@@ -9,8 +9,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Input matrix and vector
+<<<<<<< HEAD
 A = [[1, 0.5], [1, 0.5]]
 u = [5, 6]
+=======
+A = [[1, 2], [3, 4]]
+u = [2, 1]
+>>>>>>> 4e35511e55f1f88a901fd9dc2bc7037fb3002dd2
 
 # Hard coded dot product (and transpose) function for (2x2) x (2x1) = (2x1).
 def dot_product(A, u):
