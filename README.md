@@ -16,7 +16,10 @@ On polynomials and plotting.
 On discrete dynamics and numerical methods.
 
 ## Problem set 4
-On micro controllers?
+On continuous dynamics.
+
+## Problem set 5
+On physics experiments using micro controllers.
 
 ## Todays problem sets
 On all sorts of subjects.
