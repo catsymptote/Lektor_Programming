@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jan 28 15:33:42 2019
-
-@author: catsymptote
-"""
-
 # For maths and plotting
 import matplotlib.pyplot as plt
 import numpy as np
@@ -41,3 +33,5 @@ ax.grid(True)
 
 plt.plot(x_values, y_values)
 fig.show()
+
+input("Press enter to exit!")  # Too keep the window open.

@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jan 28 15:30:04 2019
-
-@author: catsymptote
-"""
-
 # Vector describing/defining the polynomial function.
 p = [-2, 1, -2, 1]
 

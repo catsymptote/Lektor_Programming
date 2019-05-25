@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jan 30 17:45:27 2019
-
-@author: paul
-"""
-
 import matplotlib.pyplot as plt
 import numpy as np
 import math
@@ -45,3 +38,5 @@ ax = fig.add_subplot(111)
 ax.grid(True)
 plt.plot(x, y)
 fig.show()
+
+input("Press enter to exit!")  # Too keep the window open.

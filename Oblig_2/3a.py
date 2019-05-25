@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb  6 18:52:50 2019
-
-@author: catsymptote
-"""
-
 # Initial values
 n = 5           # List size
 lst = [0]*n     # Make empty list
