@@ -27,8 +27,28 @@ ax.scatter3D(xdata, ydata, zdata, c=zdata, cmap='Greens');
 def f(x, y):
     return np.sin(np.sqrt(x ** 2 + y ** 2))
 
-x = np.linspace(-6, 6, 30)
-y = np.linspace(-6, 6, 30)
+def zeta(m, s):
+    result = 0
+    #print(m)
+    for n in range(int(m)):
+        result += 1/np.power(n+1, s)
+    return result
+
+def f_2(m, s):
+    results = []
+    print(m)
+    print(m[0])
+    for i in range(len(s)):
+        for j in range(len(m)):
+            results.append(zeta(m[j], s[i]))
+    
+    return results
+
+
+x = np.linspace(2, 5, 4)
+y = np.linspace(2, 5, 4)
+#print(x)
+#print(y)
 
 X, Y = np.meshgrid(x, y)
 Z = f(X, Y)
