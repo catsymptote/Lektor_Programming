@@ -1,7 +1,7 @@
 import numpy as np
 
 def f(t):
-    return 4*t**3
+    return t**2
 
 
 def integrate(a, b):
@@ -15,4 +15,4 @@ def integrate(a, b):
     return integral
 
 
-print(integrate(1, 5))
+print(integrate(0, 1))
