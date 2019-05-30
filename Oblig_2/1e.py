@@ -28,6 +28,7 @@ def P_rec_vect(u, n):
         v[i] = P_rec(u[i], n)
     return v
 
+
 u = [0, 1, 2, 3, 4]
 n = 5   # Vector size/factorial "loops".
 print(P_rec_vect(u, n))
