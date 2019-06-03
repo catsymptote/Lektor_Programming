@@ -1,0 +1,66 @@
+### $(vi)$
+
+The defined range for the function below can be decided by its root. We can see that as $e^2$ becomes big, $sin^2(\theta)$ must become small, such that $e^2 sin^2(\theta) \leq 1$. As they are both squared, as $e$ becomes bigger, $sin(\theta)$ must reduce in size.
+
+$$ E(e) = 4a \int_{0}^{\frac{\pi}{2}}{ \sqrt{1 - e^2 sin^2(\theta)}} \, d\theta $$
+
+Since we cannot take the square root of a negative number (without applying complex numbers, which we will not do here), we know the square root in the formula cannot become negative. Thus:
+
+\begin{align*}
+    1 - e^2 sin^2(\theta)    \quad \geq & \quad 0 \\\\
+    -e^2 sin^2(\theta)       \quad \geq & \quad -1 \\\\
+    e^2 sin^2(\theta)        \quad \leq & \quad 1 \\\\
+    \sqrt{e^2 sin^2(\theta)} \quad \leq & \quad \sqrt{1} \\\\
+    e \, sin(\theta)         \quad \leq & \quad 1 \\\\
+    sin(\theta)              \quad \leq & \quad \frac{1}{e} \\\\
+    \theta                   \quad \leq & \quad arcsin \Big( \frac{1}{e} \Big)
+\end{align*}
+
+We know that $arcsin(\theta)$ is only defined with $-1 \leq \theta \leq 1$. Thus, $|\theta| \leq 1$. This means that
+
+$$ |\frac{\sqrt{a^2 - b^2}}{a} | \leq 1
+\implies |\sqrt{a^2 - b^2}| \leq |a|
+\implies |a^2 - b^2| \leq |a^2|
+\implies -b^2 \leq 0
+\implies b^2 \geq 0
+\implies b \geq 0 $$
+
+We also know $e \geq 0$, since e is a square root (which cannot be a negative number). Further more, we know that for $1 - \frac{b^2}{a^2}$ to be bigger or equal to zero, as is requred by the outer square root, $1 - \frac{b^2}{a^2}$ needs to be bigger than zero.
+
+\begin{align*}
+    1 - \frac{b^2}{a^2} \quad \geq & \quad 0 \\\\
+    -\frac{b^2}{a^2} \quad \geq & \quad -1 \\\\
+    \frac{b^2}{a^2} \quad \leq & \quad 1 \\\\
+    \frac{b^2}{a^2} \quad \leq & \quad 1 \\\\
+    b^2 \quad \leq & \quad a^2 \\\\
+    b \quad \leq & \quad a
+\end{align*}
+
+Showing $a$ has to be greater than or equal to $b$.
+
+
+Since we know $|sin(\theta)| \leq 1$, we know that $|sin^2(\theta)| \leq 1$.
+Since $e^2sin^2(\theta) \leq 1$, we kan know that 
+
+$$ e =
+\sqrt{1 - \frac{b^2}{a^2}}
+=
+\sqrt{\frac{a^2}{a^2} - \frac{b^2}{a^2}}
+=
+\sqrt{\frac{a^2 - b^2}{a^2}}
+=
+\frac{\sqrt{a^2 - b^2}}{\sqrt{a^2}}
+=
+\frac{\sqrt{a^2 - b^2}}{a}
+$$
+
+
+
+
+Thus $E$ is defind when:
+
+$$ \theta \; \leq \; arcsin \Bigg( \frac{a}{\sqrt{a^2 - b^2}} \Bigg), \quad a \geq b , \quad b \geq 0$$
+
+> There are certain inaccuracies here, as the numbers does not seem to work out in practice. Most likely related to the range of $arcsin$, as both $b \geq 0$ and the statement with $arcsin$ seems to be inaccurate.
+
+> Turns out $\frac{1}{e}$ will always be greater than one, and thus always outside the $arcsin$ domain. That didn't go as planned.
